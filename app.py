@@ -69,5 +69,15 @@ def delete_expense(id):
 def pankaj_expenses():
     return "Pankaj's expenses — coming in Step 10"
 
+
+@app.route("/terms")
+def terms():
+    return render_template("terms.html")
+
+
+@app.route("/privacy")
+def privacy():
+    return render_template("privacy.html")
+
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
